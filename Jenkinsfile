@@ -20,7 +20,7 @@ pipeline {
         stage ("Run image") {
             steps {
                 sh'''
-                docker run --name first-container first-image
+                docker run first-image
                 '''
             }
         }
