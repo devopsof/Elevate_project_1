@@ -19,7 +19,7 @@ pipeline {
 
         stage ("Dockerhub push") {
             steps {
-                sh "docker push irady/elevate_project_1:tagname"
+                sh "docker push irady/first_image:latest"
             }
         }
 
