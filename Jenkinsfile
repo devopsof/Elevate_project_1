@@ -17,17 +17,17 @@ pipeline {
             }
         }
 
+        stage ("Dockerhub push") {
+            steps {
+                sh "docker push irady/elevate_project_1:tagname"
+            }
+        }
+
         stage ("Run image") {
             steps {
                 sh'''
                 docker run -p 8888:8888 first-image
                 '''
-            }
-        }
-
-        stage ("Dockerhub push") {
-            steps {
-                sh "docker push irady/elevate_project_1:tagname"
             }
         }
     }
