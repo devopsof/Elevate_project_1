@@ -1,6 +1,6 @@
 pipeline {
 
-    agent {label 'first'}
+    agent {label 'First'}
 
     stages {
         stage ("Git clone") {
