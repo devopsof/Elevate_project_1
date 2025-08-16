@@ -24,5 +24,11 @@ pipeline {
                 '''
             }
         }
+
+        stage ("Dockerhub push") {
+            steps {
+                sh "docker push irady/elevate_project_1:tagname"
+            }
+        }
     }
 }
