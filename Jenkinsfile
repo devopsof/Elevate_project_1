@@ -12,7 +12,7 @@ pipeline {
         stage ("Build image") {
             steps {
                 sh'''
-                docker build -t First-image Dockerfile .
+                docker build -t First-image .
                 '''
             }
         }
