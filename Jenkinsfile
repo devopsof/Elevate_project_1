@@ -12,7 +12,7 @@ pipeline {
         stage ("Build image") {
             steps {
                 sh'''
-                docker build -t first-image .
+                docker build -t irady/first_image:latest .
                 '''
             }
         }
